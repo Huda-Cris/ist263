@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS Intro</title>
+    <!-- This is an embedded style sheet -->
+    <style>
+        /* Below we have a group selector */
+        p,ul {color: blueviolet; font-family: cursive; text-decoration:line-through;}
+        /* Decendent selector */
+        p a{color: green;}
+        #first_paragraph {color: brown;}
+        .pink{color: pink;}
+    </style>
+</head>
+<body>
+    <a href="https://amazon.com">Amazon</a>
+    <p id="first_paragraph">Lorem ipsum dolor sit amet consectetur <a href="https://www.google.com">google</a>
+        adipisicing elit. Reprehenderit quia fugiat debitis a quibusdam necessitatibus quasi ut nam laudantium aperiam harum aspernatur ipsam tenetur nulla sapiente, quod magnam, beatae eum!</p>
+    <ul>
+        <li>Blue</li>
+        <li>Indigo</li>
+        <li>Gray</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat adipisci est, similique quam quaerat mollitia sit culpa repellat consectetur facere eveniet deleniti quidem voluptas dolorum debitis excepturi odit porro.</p>
+    <p class="pink">This is the third first paragraph</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+/* Below we have a group selector */
+p,ul {
+    color: blueviolet; 
+    font-family: cursive; 
+    text-decoration:line-through;
+}
+/* Decendent selector */
+p a{
+    color: green;
+}
+#first_paragraph {
+    color: brown;
+}
+.pink{
+    color: pink;
+}
