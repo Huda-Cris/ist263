@@ -1,5 +1,6 @@
 body{
-    background-image: url("../images/otto.jpg");
+    background-image: url(../images/otto.jpg);
+    background-repeat: repeat;
 }
 p{
     background-color: blueviolet;
