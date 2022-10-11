@@ -1,0 +1,22 @@
+
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color:#FFFFFF ;
+}
+
+body{
+    background-color: #6495ED;
+    background-image:url("../images/office.png"); /*somehting is not working.*/
+    /* background-repeat: no-repeat; */
+}
+p{
+    background-image: url("../images/logo-sized.png");
+}
+.second{
+    border: 2px;
+    margin: 20px;
+    padding: 10px;
+    background-image: url(../images/bio_pic.png);
+}
