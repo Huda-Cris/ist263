@@ -1,0 +1,52 @@
+/* body, text, links and background */
+body{
+    font-family: sans-serif;
+    background-color: #EDE4E0;
+    color: #006400;
+
+    
+}
+h1,h2{
+    color: #d2691e;
+    background-color: #DBC8AC;
+}
+
+.evenrow{
+    background-color: #D2691E;
+    
+}
+p{
+   
+    background-color:bisque;
+}
+a{
+    color: #D2691E;
+    background-color: #DBC8AC;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.3;
+}
+
+nav{
+    padding: 10px;
+    margin-bottom: 30px
+}
+
+
+nav a{
+    background-color: #665A48;
+    color: #0000ff;
+}
+
+a:hover{
+    background-color: #000000;
+}
+
+
+li{
+    color:#D2691E ;
+}

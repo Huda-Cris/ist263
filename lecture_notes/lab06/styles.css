@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+    
+}
+h1,h2{
+    color: chocolate;
+}
+
+.evenrow{
+    background-color: #D2691E;
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.3;
+}
