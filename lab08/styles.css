@@ -50,3 +50,12 @@ a:hover{
 li{
     color:#D2691E ;
 }
+
+.tab1{
+    float: right;
+}
+.bio_image{
+    margin: 5%;
+    float: left;
+
+}
