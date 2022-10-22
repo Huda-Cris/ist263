@@ -59,3 +59,26 @@ li{
     float: left;
 
 }
+.row1{
+    display: flex;
+    background-color: #665A48;
+    border-radius: 1em;
+}
+.linkd_email,.address{
+    margin: 20px;
+}
+.linkd_email{
+    margin-left: 40px;
+    margin-top: 40px;
+    
+}
+.row2{
+    display: flex;
+    background-color: bisque;
+    border-radius: 1em;
+    margin-top: 2%;
+}
+
+.google_map, .form{
+    margin: 20px;
+}
