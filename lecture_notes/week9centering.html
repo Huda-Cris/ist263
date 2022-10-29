@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: center;
+            border: 2px solid #ff0000;
+        }
+        .margincenter{
+            border: 2px solid #6bb26b;
+            width: 30%;
+            /* put equal size margin all over */
+            margin: 0 auto; 
+        }
+        .flexhack{
+            border: 2px dashed violet;
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            padding: 5px;
+        }
+
+        .nav1, .nav2, .nav3, .media_links{
+            display: flex;
+            background-color: #000000;
+            color: #ffffff;
+
+        }
+        .nav1{
+            justify-content: end;
+        }
+
+        .nav2{
+            margin-top: 1%;
+            background-color: #6500e0;
+            justify-content:space-between;
+        }
+        .parentflex{
+            display: flex;
+            background-color: #000000;
+            justify-content: space-between;
+            margin-top: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, numquam. Est, dicta quibusdam sunt eius voluptate odit, praesentium adipisci quisquam esse hic maiores libero tempore reprehenderit doloremque cumque provident ab.</p>
+    <div class="margincenter">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi, quos sapiente officia at porro dolor quia, qui doloremque dolore eveniet id deleniti voluptate nulla, culpa minus quas totam assumenda.
+    </div>
+   <div class="flexhack">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat harum nobis illo! Quaerat asperiores veritatis numquam dolor facere tempore dicta assumenda, impedit aspernatur dolores eius laudantium debitis voluptas dolorum in.
+   </div>
+
+   <!-- NAVIGATION BAR 1 -->
+   <div class="nav1">
+    <div class="home">Home</div>
+    <div class="aboutUs">About Us</div>
+    <div class="product">Product</div>
+    <div class="contact">Contact</div>
+   </div>
+
+   <!-- NAVIGATION BAR 2 -->
+   <div class="nav2">
+    <div class="home">Home</div>
+    <div class="aboutUs">About Us</div>
+    <div class="product">Product</div>
+    <div class="contact">Contact</div>
+   </div>
+
+    <!-- NAVIGATION BAR 3 -->
+   
+
+    <!-- Social Media Links -->
+   
+
+    <div class="parentflex">
+        <!-- column 1 -->
+            <div class="nav3">
+                <div class="home">Home</div>
+                <div class="aboutUs">About Us</div>
+                <div class="product">Product</div>
+                <div class="contact">Contact</div>
+            </div>
+            <!-- column 2 -->
+            <div class="media_links">
+                <div class="fb">Facebook</div>
+                <div class="tw">Twitter</div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
