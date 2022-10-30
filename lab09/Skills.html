@@ -14,10 +14,41 @@
         p{
             background-color: #EDE4E0;
             color: rgb(151, 58, 0);
+            margin: 5%;
         }
+        .Parent{
+            display: flex;
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-left: 20%;
+
+        }
+
         .keySkills{
-            width: 10%;
+            width: 5%;
+            color: #000000;
+            display: flex;
+            margin-top: 5%;
+            
+            
         }
+        .keySkills div{
+            padding: 40px;
+        }
+
+        .otherskills{
+            text-align: center;
+            background-color: #deb887;
+            border-radius: 15%;
+            padding: 8%;
+            width: 200%;
+            margin-left: 400%;
+        }
+        .otherskills ul{
+            color: #000000; 
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -28,12 +59,27 @@
     </nav>
     <h1>Technical Skills</h1>
     <p>I am an aspiring developer seeking to learn and enhance my knowledge on technology. <br> I have included my core skills down below: </p>
-    <div class="keySkills">
-        <img src="../images/py_icon.svg" alt="Python">
-        <img src="../images/java.svg" alt="Java"> 
-        <img src="../images/html5.svg" alt="HTML">
-        <img src="../images/css3-alt.svg" alt="CSS">
-        <img src="../images/cpp_icon.png" alt="C++">
+    
+    
+   
+    <div class="Parent">
+            <div class="keySkills">
+                <div><img src="../images/py_icon.svg" alt="Python">Python</div>
+                <div><img src="../images/java.svg" alt="Java">Java</div>
+                <div><img src="../images/html5.svg" alt="HTML">HTML</div>
+                <div><img src="../images/css3-alt.svg" alt="CSS">CSS</div>
+                <div><img src="../images/cpp_icon.png" alt="C++" style="width: 60px;">C++</div>
+        </div>
+        <div>
+            <aside class="otherskills">
+                <h2>Other Skills</h2>
+                <ul>Machine Learning</ul>
+                <ul>Javascript</ul>
+                <ul>OWASP 10</ul>
+                <ul>Sklearn</ul>
+                <ul>Splunk ES</ul>
+            </aside>
+        </div>
     </div>
     <!-- <table>
         <caption>Technical Skills</caption>
