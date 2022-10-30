@@ -34,13 +34,15 @@ h2{
 nav{
     padding: 10px;
     margin-bottom: 30px;
-  
+    background-color: #006400;
+    display: flex;
 }
 
 
 nav a{
-    background-color: #665A48;
-    color: #0000ff;
+    background-color: #006400;
+    color: #eaeaea;
+    
 }
 
 a:hover{
