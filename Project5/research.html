@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Page</title>
+</head>
+<body>
+    <div class="nav_parent">
+        <div><a href="index.html" id="navbar__logo">_ __HALI</a></div>
+        <nav class="nav_container">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+
+    <div class="main_content">
+        <h1 >OBJECTIVE</h1>
+        <ul>
+            <li><p>I focused this study primarily in the Northeast region of the States which include, New Jersey, Maryland, Rhode Island, and Pennsylvania. From Stanford's Open Policing Project, I have gathered, compiled and analyzed datasets of these four states.</p></li>
+            <li>Naturally, various criteria must be considered in order to correctly determine whether or not discrepancies exist. For instance, the percentage of each demographic by region, as well as the stop search and outcome rates. This may be further subdivided by race, gender, year, and even district.</li><br>
+            <li>The table below contains an approximation of population by state as well as average data on demographic population. It is critical to remember these percentages since they will aid in our analysis later on.</li><br>
+            <img src="images/pop_table.png" alt="">
+        </ul><br><br>
+
+        <h1 >MATERIALS/METHOD</h1>
+        <ul>
+            <li>Data setswere aquired from <a target="_blank" href="https://openpolicing.stanford.edu/data/">Stanford Open Policing Project.</a> Stanford Open Policing Project.</li><br>
+            <li>The table below lists some of the major characteristics that were utilised while carrying out this project.</li><br>
+        </ul>
+        <h3>Notable Features of the Datasets</h3>
+        <img src="images/notable_features.png" alt="Notable features">
+        <ul>
+            <li>All coding was done using Python's various libraries, which included:</li>
+            <div class="indent">
+                <li>Pandas</li>
+                <li>Numpy/Scipy</li>
+                <li>Sklearn</li>
+                <li>Matplotlib</li>
+            </div>
+            <li>In this project, I was also able to employ the Sklearn Library to implement a Machine Learning Algorithm called Decision Tree.</li><br>
+            <li><strong>What is Machine Learning?</strong></li>
+            <div class="indent">
+                <li>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.</li>
+                <li>For starters, Machine learning is classified into three types: supervised learning, unsupervised learning, and reinforcement learning.</li>
+                <div class="indent_2">
+                    <p>- <a href="https://www.ibm.com/cloud/learn/supervised-learning" target="_blank">Supervised</a> is distinguished by the use of labeled datasets to train algorithms that properly categorize data or predict outcomes. As input data is fed into the model, the weights are adjusted until the model is well fitted, which occurs as part of the cross validation process.</p>
+                    <p>- <a href="https://www.ibm.com/cloud/learn/unsupervised-learning" target="_blank"> Unsupervised</a> ,without the need for human interaction, ear algorithms that uncover hidden patterns or data groupings. Because of its capacity to detect similarities and contrasts in data, it is a perfect option for exploratory data analysis, cross-selling techniques, consumer segmentation, and picture identification.</p>
+                    <p>- <a href="https://developer.ibm.com/articles/cc-reinforcement-learning-train-software-agent/">Reinforcement</a> learning is a machine learning training strategy that rewards positive actions while penalizing undesirable ones. A reinforcement learning agent, in general, can detect and comprehend its surroundings, act, and learn via trial and error.</p>
+                </div>
+            </div><br>
+            <a href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained#:~:text=What%20is%20machine%20learning%3F,to%20how%20humans%20solve%20problems." id="m_info">Click here for more information.</a>
+            <li><strong>What is a Decision Tree?</strong></li>
+
+            <div class="indent">
+                <li>A decision tree is a form of supervised machine learning that is used to categorize or predict depending on the answers to a prior series of questions. The model is supervised learning in the sense that it is trained and evaluated on data that contains the desired classification.</li>
+                <li>When visualizing a decision tree it is best to think of a flowchart. Take this for example:</li>
+                <img src="images/decsion_tre_explain.png" alt="">
+                <li>Each node represents a feature. The features in this case consists of salary, commute and whether free coffee is provided. The higher the feature is in the tree the greater importance it has to the final outcome.</li><br>
+                <li>Typically, data analysts divide the data set into training and testing sections in a 4:1 ratio. The decision tree builds and fits the pattern in the training portion, and the accuracy of the model is measured in the testing section.</li>
+            </div>
+        </ul>
+
+        <h1 >RESULTS</h1>
+        <ul>
+            <li>The table below shows the average number of stops per race in each state. In terms of demographic population size, I noticed that while stop rates in most states remain steady, there is significant difference between the states.</li>
+            <h3>Rate of Stops Per Year Per Race in Proportion to Demographic</h3>
+            <img src="images/states_all.png" alt="States">
+            <div class="state_names">
+                <li><strong>Pennsylvania</strong> </li>
+                <div class="indent">
+                    <li>Black stops rates average about 2.5x greater the white people in proportion to their population.</li>
+                    <li>Hispanic stop rates average about 1.2x greater than white people.</li>
+                </div>
+                <li><strong>Maryland</strong> </li>
+                <div class="indent">
+                    <li>Black stops rates average about 1.35x greater the white people in proportion to their population.</li>
+                    <li>Hispanic stop rates average about 22% greater than white people.</li>
+                </div>
+                <li><strong>New Jersey</strong> </li>
+                <div class="indent">
+                    <li>Black stops rates average about 2.67x greater the white people in proportion to their population.</li>
+                    <li>Hispanic and white individuals average about the same in New Jersey with only a difference of 0.14%.</li>
+                </div>
+                <li><strong>Rhode Island</strong> </li>
+                <div class="indent">
+                    <li>The range in years in Rhode Island is much greater then the other three states, hence seeing such fluctuation is not totally abnormal. Despite this however, there remains a consistent disparity between black and white individuals.</li>
+                    <li>Between the years 2005-2006, black stops rates jumped 10% while white stops rates only jumped about 5%. Interestingly, Black stops rates steadily increased at a greater rate then both white and Hispanic stop rates.</li>
+                    <li>As Rhode Island was the only state of the group with fluctuating patter, I decided to looked at the average reasons for stops.</li>
+                    <h3>Average reasons for stops in Rhode Island</h3>
+                    <img src="images/ri_reason_stops.png" alt="Search rates" class="ri_reason_stops">
+                    <li>The chart above shows the percentage of common reasons for stoppage for each race in Rhode Island. Although speeding is the most common across all three ethnicities, equipment/inspection violations are 10% more common among black and Hispanic people.</li><br>
+                </div>
+            </div>
+            <li>However, this might be due to the concentration of a specific race being higher in 'busier' sites with increased police activity. To furthur determine whether there is a bias, let's examine the success rates of the searches.</li><br>
+            <img src="images/search_hit_rates.png" alt="Search rates"><br>
+            <li>Taking <a href="https://www.jstor.org/stable/26422360">Becker's</a> outcome analysis into account,we can concur that if the search rates are higher in one race while the success rates are lower than its counterparts, then evidentially, bias exists.</li>
+            <li>Consider Pennsylvania:</li>
+            <div class="indent">
+                <li>The search rate for black people is around 70% with just approximately 27% success accuracy.</li>
+                <li>In comparison,the search rate for white people is 17%, with an average success rate of 30%.</li>
+                <li>This suggests that black individuals are getting searched with less criteria and less eveidence then white people do.</li>
+            </div>
+            <li>Here is a more visual graph of White v. Minority success rates in Pennsylvania to better get the picture:</li>
+            <img src="images/pen_success_hit.png" alt="Pennsylvania hit rates" class="pen_hit_rates">
+            <li>Next, using the decision tree algorithm, I was able to determine not just the likelihood of a search occurring based on year, age, race, and gender, but also the outcome if a search did indeed occur.</li>
+            <li>Of course, all of these predictions are within the range of accuracy. Prediction of search rate averages 90% across states, whereas accuracy of prediction of outcomes is about 78%.</li>
+            <li>Here is a table that contains the feature importance of the outcome modeled Decision Tree. Remember in decision trees the higher the feature in the tree the greater importance it serves.</li>
+            <h3>Importance of Features by State</h3>
+            <img src="images/feature_import.png" alt="Importance of Features" class="features">
+            <li>Pennsylvania rates 'types' (standing fortypeof search) as its most important search. i found that if the search escalates to pedestrian level, the outcome almost always results in an arrest. Additionally, if the driver happened to be black, between the ages 19-30, the situation almost always leads to an arrest.</li>
+            <li>Compared to Pennsylvania, both New Jersey and Rhode Island consider 'years' to be the most important festure. This makes sense because they provide the greatest range in years.</li>
+            <li>Another noteworthy observation I made is that age is quite important. Sometimes even more so than race. Maryland, for example, holds age at about 57% of importance. I observed that the younger you are, the more probable it is that you will get arrested.</li>
+            <li>Here is the first couple of levels of the outcome Decision Tree of Pennsylvania. And to give you a size reference, next to it is the full Decision Tree.</li>
+        </ul>
+        <img src="images/tree_visualization.png" alt="Full Tree Respresentation">
+        <img src="images/tree_visualization_short.png" alt="Top Tree Respresentation"><br>
+        <h1 >CONCLUSION/OUTLOOK</h1>
+        <ul>
+            <li>In conclusion, it is quite apparant that some bias does exist, particularly in Pennsylvania and Rhode Island. </li>
+             <li><strong>Future Prospects</strong></li>
+            <div class="indent">
+            <li>More enforcement on public data in every jurisdiction</li>
+            <li>Implement AI system to it records minimum requirements to solidify the integrity of the data</li>
+            <li>Analysis throughout traffic law changes</li>
+        </div>
+
+        </ul>
+        
+        <h1 >CONCLUSION/OUTLOOK</h1>
+        <ul class="references">
+            <li >Becker, G. Nobel Lecture: The Economic way of looking at behavior. J. Polit. <div>Econ. 101, 385-409 (1993)
+            </li><br>
+            <li >Becker, G. Te Economics of Discrimination (Univ. of Chicago Press, 1957)</li><br>
+            <li >“The Stanford Open Policing Project.” Openpolicing.stanford.edu, 2020,<div> openpolicing.stanford.edu/data/
+            </li><br>
+            <li id="go_to_con" >Police. “2021 Police Violence Report.” Policeviolencereport.org, 2021, <div></div> policeviolencereport.org/
+            </li><br>
+            <li>The 2022 LSAMP Summer REU Program is sponsored by​​ - NSF HRD 1712733 </li>
+            <li>Huda-Cris. “Huda-Cris/Analysis-of-Trafic-Stops-Project.” GitHub, 2022, </li>
+        </ul>
+    </div>
+    <div class="menu_container">
+        <ul  id="object"> <strong>Table of Contents</strong> </ul>
+        <ul class="menu_item" id="ob_ject">Objective</ul>
+        <ul class="menu_item" id="mat_met">Materials/Method</ul>
+        <ul class="menu_item" id="mach_lea">What Is Machine Learning?</ul>
+        <ul class="menu_item" id="result">Results</ul>
+        <ul class="menu_item" id="con_out">Conclusion/Outlook</ul>
+        <ul class="menu_item" id="refer">References</ul>
+    </div>
+    
+</body>
+</html>
