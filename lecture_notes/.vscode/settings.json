@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "config": "bat",
+        "stdio.h": "c"
+    }
+}
