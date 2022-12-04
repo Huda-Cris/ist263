@@ -5,15 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: #456063;
+            width: 85%;
+            
+        }
+        .main_content{
+            padding: 2%;
+            margin-left: 25%;
+            color: azure;
+        }
+        img{
+            padding: 3%;
+            margin-left: 1%;
+            border-radius: 15%;
+            border:  10px solid #202d2f;
+        }
+        a{
+            /* text-decoration: none; */
+            color: black;
+        }
+        h1{
+            text-indent: 5%;
+        }
+        .indent ul li{
+            margin-left: 10%;
+            padding: 1%;
+        }
+        .indent_2{
+            margin-left: 20%;
+            padding: 1%;
+        }
+        ul li{
+            padding: 1%;
+        }
+        .menu_container{
+            display: block;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            color: #feffff;
+            border: 1px solid #e5e6e8;
+            border-left: #171d29;
+            border-bottom: #171d29;
+            border-top:#171d29 ;
+            margin-top: -8490px;
+            padding: 10px;
+        
+            position: fixed;
+    
+}
+        .menu_item{
+            padding: 6%;
+            font-family:monospace;
+            transition: all 0.3s ease ;
+            font-size: larger;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
-    <div class="nav_parent">
-        <div><a href="index.html" id="navbar__logo">_ __HALI</a></div>
-        <nav class="nav_container">
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="about.html">About</a>
-        </nav>
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">_ __HALI</a>
+        <!-- <div class="menu_container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div> -->
+            
+          <div class="menu_content">
+            <a href="index.html" class="ph_navbar__item">Home</a>
+            <a href="research_index.html" class="ph_navbar__item">Research</a>
+            <a href="about_index.html" class="ph_navbar__item">About</a>
+            <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" target="_blank" id="ph_github_btn" >GITHUB</a>
+            <div class="x_btn">
+                <div class="arrow1"></div>
+                <div class="arrow2"></div>
+              </div>
+          </div>
+          
+          
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links" id= home_page >Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="research.html" class="navbar__links navbar__links--active"  id="research_page">Research</a>
+                <div id="Research" class="tabcontent" ></div>
+            </li>
+            <li class="navbar__item">
+                <a href="about.html" class="navbar__links"  id="about_page">About</a>
+                <div id="About" class="tabcontent"></div>
+            </li>
+            <li class="navbar__btn">
+                <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" class="button" target="_blank" id="go_to_github">GITHUB</a>
+            </li>
+        </ul>
     </div>
 
     <div class="main_content">
@@ -23,7 +115,7 @@
             <li>Naturally, various criteria must be considered in order to correctly determine whether or not discrepancies exist. For instance, the percentage of each demographic by region, as well as the stop search and outcome rates. This may be further subdivided by race, gender, year, and even district.</li>
             <li>The table below contains an approximation of population by state as well as average data on demographic population. It is critical to remember these percentages since they will aid in our analysis later on.</li>
         </ul>
-        <img src="images/pop_table.png" alt="">
+        <img src="images/pop_table_2.png" alt="">
         <br><br>
 
         <h1 >MATERIALS/METHOD</h1>
@@ -160,8 +252,8 @@
             </ul>
             
         
-        <img src="images/tree_visualization.png" alt="Full Tree Respresentation">
-        <img src="images/tree_visualization_short.png" alt="Top Tree Respresentation"><br>
+        <img src="images/tree_visualization.png" alt="Full Tree Respresentation" style="margin-left: 25% ;">
+        <img src="images/tree_visualization_short.png" alt="Top Tree Respresentation" style="margin-left: 25% ;"><br>
         <h1 >CONCLUSION/OUTLOOK</h1>
         <ul>
             <li>In conclusion, it is quite apparant that some bias does exist, particularly in Pennsylvania and Rhode Island. </li>
