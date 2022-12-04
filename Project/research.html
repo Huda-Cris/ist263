@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function clickObj(){
+            let dec_tree = document.querySelector('.dec_tree');
+            dec_tree
+        }
+
+    </script>
     <style>
         body{
             background-color: #456063;
@@ -19,11 +26,12 @@
         }
         img{
             padding: 3%;
-            margin-left: 1%;
+            margin-left: 25% ;
             border-radius: 15%;
             border:  10px solid #202d2f;
+            max-width: 100%;
         }
-        a{
+        a, #remember{
             /* text-decoration: none; */
             color: black;
         }
@@ -54,7 +62,7 @@
             border-top:#171d29 ;
             margin-top: -8490px;
             padding: 10px;
-        
+            list-style: none;
             position: fixed;
     
 }
@@ -65,6 +73,10 @@
             font-size: larger;
             font-weight: lighter;
             cursor: pointer;
+            list-style: none;
+        }
+        .menu_item:hover{
+            color: #8fbec2;
         }
 
     </style>
@@ -115,7 +127,7 @@
             <li>Naturally, various criteria must be considered in order to correctly determine whether or not discrepancies exist. For instance, the percentage of each demographic by region, as well as the stop search and outcome rates. This may be further subdivided by race, gender, year, and even district.</li>
             <li>The table below contains an approximation of population by state as well as average data on demographic population. It is critical to remember these percentages since they will aid in our analysis later on.</li>
         </ul>
-        <img src="images/pop_table_2.png" alt="">
+        <img src="images/pop_table_2.png" alt="" style="margin-left: 1%">
         <br><br>
 
         <h1 >MATERIALS/METHOD</h1>
@@ -124,7 +136,7 @@
             <li>The table below lists some of the major characteristics that were utilised while carrying out this project.</li>
         </ul>
         <h3>Notable Features of the Datasets</h3>
-        <img src="images/notable_features.png" alt="Notable features">
+        <img src="images/notable_features.png" alt="Notable features" style="margin-left: 1%">
         <ul>
             <li>All coding was done using Python's various libraries, which included:</li>
         </ul>
@@ -239,7 +251,7 @@
             <ul>
                 <li>Next, using the decision tree algorithm, I was able to determine not just the likelihood of a search occurring based on year, age, race, and gender, but also the outcome if a search did indeed occur.</li>
                 <li>Of course, all of these predictions are within the range of accuracy. Prediction of search rate averages 90% across states, whereas accuracy of prediction of outcomes is about 78%.</li>
-                <li>Here is a table that contains the feature importance of the outcome modeled Decision Tree. Remember in decision trees the higher the feature in the tree the greater importance it serves.</li>
+                <li>Here is a table that contains the feature importance of the outcome modeled Decision Tree. <i id="remember" style="text-decoration: underline;">Remember</i> in decision trees the higher the feature in the tree the greater importance it serves.</li>
             </ul>
             
             <h3>Importance of Features by State</h3>
@@ -282,7 +294,7 @@
     </div>
     <div class="menu_container">
         <ul>
-            <li id="object"> <strong>Table of Contents</strong></li>
+            <li id="object" style="list-style: none; font-size:larger;"> <strong>Table of Contents</strong></li>
             <li class="menu_item" id="ob_ject">Objective</li>
             <li class="menu_item" id="mat_met">Materials/Method</li>
             <li class="menu_item" id="mach_lea">What Is Machine Learning?</li>
@@ -291,6 +303,6 @@
             <li class="menu_item" id="refer">References</li>
         </ul>
     </div>
-    
 </body>
+<script src="apps_research.js"></script>
 </html>
