@@ -7,9 +7,37 @@
     <title>Research Page</title>
     <link rel="stylesheet" href="styles.css">
     <script>
+        
+        function clickTree(){
+            let dec_tree=document.getElementById("dec_tree");
+            dec_tree.scrollIntoView(true);
+            
+        }
+
         function clickObj(){
-            let dec_tree = document.querySelector('.dec_tree');
-            dec_tree
+            window.scrollTo(0,0);
+            // document.getElementById("ob_ject").style.color= "#8fbec2";
+        }
+
+        function clickMat(){
+            let dec_tree=document.getElementById("go_to_mat");
+            dec_tree.scrollIntoView(true);
+        }
+        function clickMach(){
+            let dec_tree=document.getElementById("goto_mach");
+            dec_tree.scrollIntoView(true);
+        }
+        function clickRes(){
+            let dec_tree=document.getElementById("go_to_res");
+            dec_tree.scrollIntoView(true);
+        }
+        function clickCon(){
+            let dec_tree=document.getElementById("go_to_con");
+            dec_tree.scrollIntoView(true);
+        }
+        function clickRef(){
+            let dec_tree=document.getElementById("go_to_con");
+            dec_tree.scrollIntoView(true);
         }
 
     </script>
@@ -34,6 +62,7 @@
         a, #remember{
             /* text-decoration: none; */
             color: black;
+            cursor: pointer;
         }
         h1{
             text-indent: 5%;
@@ -74,9 +103,11 @@
             font-weight: lighter;
             cursor: pointer;
             list-style: none;
+            scroll-behavior: smooth;
         }
         .menu_item:hover{
             color: #8fbec2;
+            transition: all 0.3s ease ;
         }
 
     </style>
@@ -143,7 +174,7 @@
         <div class="indent">
             <ul>
                 <li>Pandas</li>
-                <li>Numpy/Scipy</li>
+                <li id="go_to_mat">Numpy/Scipy</li>
                 <li>Sklearn</li>
                 <li>Matplotlib</li>
             </ul>
@@ -165,21 +196,21 @@
             <p>- <a href="https://developer.ibm.com/articles/cc-reinforcement-learning-train-software-agent/">Reinforcement</a> learning is a machine learning training strategy that rewards positive actions while penalizing undesirable ones. A reinforcement learning agent, in general, can detect and comprehend its surroundings, act, and learn via trial and error.</p>
         </div>
             
-        <a href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained#:~:text=What%20is%20machine%20learning%3F,to%20how%20humans%20solve%20problems." id="m_info">Click here for more information.</a>
+        <a href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained#:~:text=What%20is%20machine%20learning%3F,to%20how%20humans%20solve%20problems." id="goto_mach" target="_blank">Click here for more information.</a>
         <ul>
             <li><strong>What is a Decision Tree?</strong></li>
         </ul>
 
-            <div class="indent">
+            <div class="indent" id="dec_tree">
                 <ul>
-                    <li>A decision tree is a form of supervised machine learning that is used to categorize or predict depending on the answers to a prior series of questions. The model is supervised learning in the sense that it is trained and evaluated on data that contains the desired classification.</li>
+                    <li >A decision tree is a form of supervised machine learning that is used to categorize or predict depending on the answers to a prior series of questions. The model is supervised learning in the sense that it is trained and evaluated on data that contains the desired classification.</li>
                     <li>When visualizing a decision tree it is best to think of a flowchart. Take this for example:</li>
                 </ul>
                 
-                <img src="images/decsion_tre_explain.png" alt="">
+                <img src="images/decsion_tre_explain.png" alt="" >
                 <ul>
                     <li>Each node represents a feature. The features in this case consists of salary, commute and whether free coffee is provided. The higher the feature is in the tree the greater importance it has to the final outcome.</li>
-                    <li>Typically, data analysts divide the data set into training and testing sections in a 4:1 ratio. The decision tree builds and fits the pattern in the training portion, and the accuracy of the model is measured in the testing section.</li>
+                    <li id="go_to_res">Typically, data analysts divide the data set into training and testing sections in a 4:1 ratio. The decision tree builds and fits the pattern in the training portion, and the accuracy of the model is measured in the testing section.</li>
                 </ul>  
             </div>
        
@@ -251,7 +282,7 @@
             <ul>
                 <li>Next, using the decision tree algorithm, I was able to determine not just the likelihood of a search occurring based on year, age, race, and gender, but also the outcome if a search did indeed occur.</li>
                 <li>Of course, all of these predictions are within the range of accuracy. Prediction of search rate averages 90% across states, whereas accuracy of prediction of outcomes is about 78%.</li>
-                <li>Here is a table that contains the feature importance of the outcome modeled Decision Tree. <i id="remember" style="text-decoration: underline;">Remember</i> in decision trees the higher the feature in the tree the greater importance it serves.</li>
+                <li>Here is a table that contains the feature importance of the outcome modeled Decision Tree. <i id="remember" style="text-decoration: underline;" onclick="clickTree();">Remember</i> in decision trees the higher the feature in the tree the greater importance it serves.</li>
             </ul>
             
             <h3>Importance of Features by State</h3>
@@ -295,14 +326,14 @@
     <div class="menu_container">
         <ul>
             <li id="object" style="list-style: none; font-size:larger;"> <strong>Table of Contents</strong></li>
-            <li class="menu_item" id="ob_ject">Objective</li>
-            <li class="menu_item" id="mat_met">Materials/Method</li>
-            <li class="menu_item" id="mach_lea">What Is Machine Learning?</li>
-            <li class="menu_item" id="result">Results</li>
-            <li class="menu_item" id="con_out">Conclusion/Outlook</li>
-            <li class="menu_item" id="refer">References</li>
+            <li class="menu_item" id="ob_ject" onclick="clickObj();">Objective</li>
+            <li class="menu_item" id="mat_met" onclick="clickMat();">Materials/Method</li>
+            <li class="menu_item" id="mach_lea" onclick="clickMach();">What Is Machine Learning?</li>
+            <li class="menu_item" id="result" onclick="clickRes();">Results</li>
+            <li class="menu_item" id="con_out" onclick="clickCon();">Conclusion/Outlook</li>
+            <li class="menu_item" id="refer" onclick="clickRef();">References</li>
         </ul>
     </div>
 </body>
-<script src="apps_research.js"></script>
+<!-- <script src="apps_research.js"></script> -->
 </html>
