@@ -9,26 +9,75 @@
     <style>
         body{
             background-color: #456063;
-            width: 85%;
+            
+            /* margin-left: 10%; */
+           
         }
         .about_parent{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .col1{
+            /* flex:1 ; */
+            margin-left: 16%;
+        
         }
         .col2{
-            width: 350px;
-            padding: 2%;
             margin-top: 10%;
-            border: 1px solid  #FFFFFF;
-            height: 350px;
-            line-height:30px;
-            /* max-width: 100%; */
+            border-radius: 67px 5px 0px 67px;
+            background-color: #2a393b;
+            color: #fff;
+            line-height: 30px;
+            text-align: center;
+            width: 900px;
+            float: right;
+            height: 300px;
+            /* flex: 2; */
+            max-width: 100%;
+            margin-right: 0;
+            
+            
         }
         
+        .interest{
+            border-radius: 5px 47px 47px 0px;
+            background-color: #2a393b;
+            color: #fff;
+            width: 750px;
+            height: 250px;
+            line-height: 30px;
+            text-align: center;
+            padding: 1%;
+            max-width: 100%;
+            
+            
+        }
         #me{
             border-radius: 20%;
             max-width: 100%;
         }
+        .col2 p{
+            padding: 10%;
+        }
+        #resume{
+            padding: 10%;
+        }
+        @media only screen and (max-width: 800px){
+
+            h2 h3{
+                font-size: medium;
+            }
+            p{
+                font-size: smaller;
+            }
+            .interest{
+                margin-top: 10%;
+                width: 100%;
+            }
+        }
+       
 
     </style>
 </head>
@@ -63,18 +112,19 @@
         <div class="col1">
             <h2 style="text-indent: 25%;">Huda Ali</h2>
             <img id ='me' src="images/bio_pic.jpg" alt="me:)">
-            <h3 style="text-indent: 30%;">Interests</h3>
-            <div class="interest">
-                <p>My interests outside of tech include reading, </p> 
-                <p>writing and anime. I also enjoy walks and trying</p> 
-                <p>types of different food.</p>
-            </div>
             
         </div>
-        <div class="col2">
+        <div class="col2" id="border">
             <p>Hi! My name is Huda Ali, and I am a sophomore at Syracuse University studying Computer Science. I am an aspiring developer who is captivated with technology. I have a background in cyber security and am currently Security+ certified. I'm also interested in Supervised Machine Learning. My objective is to gain as much experience as possible in the field of computer science!</p>
         </div>
-
     </div>
+
+    <div class="interest">
+        <h3 style="text-indent: 5%;">Interests</h3>
+        <p>My interests outside of tech include reading, </p> 
+        <p>writing and anime. I also enjoy walks and trying</p> 
+        <p>types of different food.</p>
+    </div>
+    <iframe src="/current_resume_huda.pdf" frameborder="0" width="80%" height="900px" id="resume"></iframe>
 </body>
 </html>
