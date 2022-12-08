@@ -5,15 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav_parent">
-        <div><a href="index.html" id="navbar__logo">_ __HALI</a></div>
-        <nav class="nav_container">
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="about.html">About</a>
-        </nav>
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">_ __HALI</a>
+        <!-- <div class="menu_container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div> -->
+            
+          <div class="menu_content">
+            <a href="index.html" class="ph_navbar__item">Home</a>
+            <a href="research_index.html" class="ph_navbar__item">Research</a>
+            <a href="about_index.html" class="ph_navbar__item">About</a>
+            <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" target="_blank" id="ph_github_btn" >GITHUB</a>
+            <div class="x_btn">
+                <div class="arrow1"></div>
+                <div class="arrow2"></div>
+              </div>
+          </div>
+          
+          
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links" id= home_page >Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="research.html" class="navbar__links navbar__links--active"  id="research_page">Research</a>
+                <div id="Research" class="tabcontent" ></div>
+            </li>
+            <li class="navbar__item">
+                <a href="about.html" class="navbar__links"  id="about_page">About</a>
+                <div id="About" class="tabcontent"></div>
+            </li>
+            <li class="navbar__btn">
+                <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" class="button" target="_blank" id="go_to_github">GITHUB</a>
+            </li>
+        </ul>
     </div>
     <div class="about_parent">
         <div class="col1">

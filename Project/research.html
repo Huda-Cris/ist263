@@ -93,6 +93,7 @@
             padding: 10px;
             list-style: none;
             position: fixed;
+            scroll-behavior: smooth;
     
 }
         .menu_item{
@@ -108,6 +109,23 @@
         .menu_item:hover{
             color: #8fbec2;
             transition: all 0.3s ease ;
+        }
+        @media only screen and (max-width: 800px) {
+            .main_content{
+                margin: 0;
+                font-size: smaller;
+            }
+            .menu_container{
+                display: none;
+            }
+            h1{
+                font-size:medium;
+                text-align: center;
+            }
+            img{
+                max-width: 100%;
+            }
+            
         }
 
     </style>
@@ -174,7 +192,7 @@
         <div class="indent">
             <ul>
                 <li>Pandas</li>
-                <li id="go_to_mat">Numpy/Scipy</li>
+                <li id="go_to_mat" style="scroll-behavior: smooth;">Numpy/Scipy</li>
                 <li>Sklearn</li>
                 <li>Matplotlib</li>
             </ul>
