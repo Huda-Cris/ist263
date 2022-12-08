@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: #456063;
+            width: 85%;
+        }
+        .about_parent{
+            display: flex;
+            justify-content: center;
+        }
+        .col2{
+            width: 350px;
+            padding: 2%;
+            margin-top: 10%;
+            border: 1px solid  #FFFFFF;
+            height: 350px;
+            line-height:30px;
+            /* max-width: 100%; */
+        }
+        
+        #me{
+            border-radius: 20%;
+            max-width: 100%;
+        }
+
+    </style>
 </head>
 <body>
     <div class="navbar__container">
@@ -16,28 +41,17 @@
             <div class="bar3"></div>
         </div> -->
             
-          <div class="menu_content">
-            <a href="index.html" class="ph_navbar__item">Home</a>
-            <a href="research_index.html" class="ph_navbar__item">Research</a>
-            <a href="about_index.html" class="ph_navbar__item">About</a>
-            <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" target="_blank" id="ph_github_btn" >GITHUB</a>
-            <div class="x_btn">
-                <div class="arrow1"></div>
-                <div class="arrow2"></div>
-              </div>
-          </div>
-          
-          
+         
         <ul class="navbar__menu">
             <li class="navbar__item">
                 <a href="index.html" class="navbar__links" id= home_page >Home</a>
             </li>
             <li class="navbar__item">
-                <a href="research.html" class="navbar__links navbar__links--active"  id="research_page">Research</a>
+                <a href="research.html" class="navbar__links"  id="research_page" >Research</a>
                 <div id="Research" class="tabcontent" ></div>
             </li>
             <li class="navbar__item">
-                <a href="about.html" class="navbar__links"  id="about_page">About</a>
+                <a href="about.html" class="navbar__links navbar__links--active"  id="about_page">About</a>
                 <div id="About" class="tabcontent"></div>
             </li>
             <li class="navbar__btn">
@@ -47,12 +61,15 @@
     </div>
     <div class="about_parent">
         <div class="col1">
-            <h2>Huda Ali</h2>
+            <h2 style="text-indent: 25%;">Huda Ali</h2>
             <img id ='me' src="images/bio_pic.jpg" alt="me:)">
-            <h3>Interests</h3>
-            <p>My interests outside of tech include reading, </p> 
-            <p>writing and anime. I also enjoy walks and trying</p> 
-            <p>types of different food.</p>
+            <h3 style="text-indent: 30%;">Interests</h3>
+            <div class="interest">
+                <p>My interests outside of tech include reading, </p> 
+                <p>writing and anime. I also enjoy walks and trying</p> 
+                <p>types of different food.</p>
+            </div>
+            
         </div>
         <div class="col2">
             <p>Hi! My name is Huda Ali, and I am a sophomore at Syracuse University studying Computer Science. I am an aspiring developer who is captivated with technology. I have a background in cyber security and am currently Security+ certified. I'm also interested in Supervised Machine Learning. My objective is to gain as much experience as possible in the field of computer science!</p>

@@ -195,33 +195,7 @@ body{
     color: white;
     transition: all 0.3s ease-in;
 }
-.ph_r_button{
-    display: none;
-}
-#phone_re_button{
-    display: none;
-}
-.ph_ab_btn{
-    display: none;
-}
-#hide{
-    display:none;
-}
-.menu_container{
-    display: none;
-}
-.menu_container{
-    display: none;
-}
-.ph_navbar__item{
-    display: none;
-}
-#ph_github_btn{
-    display: none;
-}
-.x_btn{
-    display: none;
-}
+
 
 
 
@@ -229,7 +203,7 @@ body{
     body{
         height: 100vh;
         background-color:#456063;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     #heat_map{
     display: none;
