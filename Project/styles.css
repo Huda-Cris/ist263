@@ -223,6 +223,9 @@ body{
     .r_btn:hover{
         border: 5px solid white;
     }
+    .topnav #myLinks {
+        display: block;
+        }
     
 
       
